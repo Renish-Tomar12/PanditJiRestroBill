@@ -158,7 +158,8 @@ const BillGenerate = () => {
     <div className="bill-container">
       <div className="bill">
         <h1>{restaurant.name}</h1>
-        <h4>{restaurant.address}</h4>
+         <h4>{restaurant.address}</h4>
+{/*         <h3>{restaurant.address}</h3> */}
         <p>
           <a
             href={`tel:${restaurant.phone}`}
