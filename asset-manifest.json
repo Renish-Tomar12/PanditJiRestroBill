@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PanditJiRestroBill/static/css/main.16114155.css",
+    "main.js": "/PanditJiRestroBill/static/js/main.c3de8b37.js",
+    "static/js/453.2940de4c.chunk.js": "/PanditJiRestroBill/static/js/453.2940de4c.chunk.js",
+    "static/media/burger.jpg": "/PanditJiRestroBill/static/media/burger.0b232d07d6f6a18ae3c3.jpg",
+    "index.html": "/PanditJiRestroBill/index.html",
+    "main.16114155.css.map": "/PanditJiRestroBill/static/css/main.16114155.css.map",
+    "main.c3de8b37.js.map": "/PanditJiRestroBill/static/js/main.c3de8b37.js.map",
+    "453.2940de4c.chunk.js.map": "/PanditJiRestroBill/static/js/453.2940de4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16114155.css",
+    "static/js/main.c3de8b37.js"
+  ]
+}
