@@ -1,9 +1,11 @@
-.bill-container {
+/* .bill-container {
   display: flex;
   justify-content: center;
   padding: 20px;
   background: #f2f2f2;
   min-height: 100vh;
+  width: min-content;
+  align-items: center;
 }
 
 .bill {
@@ -11,19 +13,38 @@
       rgba(255, 255, 255, 0.3), 
       rgba(255, 255, 255, 1.3)
     ),
-    url('Images/burger.jpg');
+    url('burger.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   padding: 30px;
   border-radius: 12px;
   color: #000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+} */
+.bill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2f2f2;
+  padding: 20px;
+}
 
-
-
-
+.bill {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)),
+    url("burger.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  border-radius: 12px;
+  color: #000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 800px;
+  width: 250px;
+  min-height: 1123px;
 }
 
 .input-section {
@@ -68,9 +89,11 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
+  /* margin-left: -35px; */
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -118,4 +141,46 @@ th, td {
 
 .total-section {
   margin-top: 20px;
+}
+/* Hide elements when printing */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
+/* Hide print-only section on screen */
+.print-only {
+  display: none;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Apply to your bill form inputs */
+.bill input,
+.bill textarea {
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 15px;
+  padding-bottom: 4px;
+}
+
+/* Placeholder styling (only visible if empty) */
+.bill input::placeholder,
+.bill textarea::placeholder {
+  color: #888; /* light gray */
+  text-align: center;
+}
+
+/* When input has value → hide placeholder */
+.bill input:not(:placeholder-shown)::placeholder,
+.bill textarea:not(:placeholder-shown)::placeholder {
+  color: transparent;
 }
